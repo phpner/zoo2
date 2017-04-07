@@ -1,0 +1,23 @@
+@media (max-width: 600px) {
+  .cont {
+    font-size: 75% !important;
+  }
+   .top_menu_left,.top_menu_right{
+    font-size: 90% !important;
+}
+.logo_uslugi img{
+	width: 40% !important;
+}
+}
+@media (max-width: 850px) {
+  .top_menu_left,.top_menu_right{
+    a{
+        margin-top: 42px !important;
+        display: block !important;
+    }
+  }
+  #myTab li {
+  	display: block !important;
+  	text-align: center;
+  }
+}
