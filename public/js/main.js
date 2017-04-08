@@ -37,10 +37,10 @@ $(window).ready(function ($) {
     $('.topmenu_under a');
 
     $('.topmenu_under a').each(function(){
-        var hrefA = $(this).attr('href');
-        var  hrefW = window.location.href;
+        var hrefA = $(this).attr('href').substr(2);
+        var  hrefW = window.location.href.substr(7);
         if (hrefA == hrefW){            
-        console.log(hrefA);
+        console.log($(this).children('svg').find('path').css({"fill":"#dcab0a"}));
         }
     });
 })

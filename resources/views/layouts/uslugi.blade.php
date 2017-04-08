@@ -3,9 +3,6 @@
 
     @endsection
 @section('content')
-    <div class="col-md-12 text-center logo_uslugi">
-        <img src="/img/uslugi.png" alt="">
-    </div>
     <div class="col-md-12 col-xs-12">
         <ul class="" id="myTab">
             <li class="active"><a href="#home" data-toggle="tab">Терапія</a></li>

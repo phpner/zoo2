@@ -21,18 +21,26 @@
             </div>
         <div class="row topmenu_under">
         <div class="top_menu_left col-md-6">
-            <a href="{{route('uslugi')}}">
+            <a class="uslugi" href="{{route('uslugi')}}">
+                @php include_once "/img/icons/uslug.svg"; @endphp
                 <br>
                 Ветеринарні послуги
             </a>
-            <a href="{{route('korma')}}">
+            <a class="korm" href="{{route('korma')}}">
+                @php include_once "/img/icons/korm.svg"; @endphp
                 <br>
                 Корми
             </a>
         </div>
             <div class="top_menu_right col-md-6">
-                <a href="{{route('callDoctor')}}"> <br> Виклик лікаря додому </a>
-                <a href="{{route('find')}}"> <br> як нас знайти</a>
+                <a class="likar" href="{{route('callDoctor')}}">
+                   @php include_once "/img/icons/call.svg"; @endphp
+                     <br> Виклик лікаря додому
+                </a>
+                <a class="step" href="{{route('find')}}">
+                    @php include_once "/img/icons/step.svg"; @endphp
+                    <br> як нас знайти
+                </a>
             </div>
         </div>
 

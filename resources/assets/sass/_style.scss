@@ -62,7 +62,7 @@ body{
 
   .top_menu_left, .top_menu_right{
     text-align: center;
-    padding-top: 40px;
+    padding-top: 20px;
     font-size: 120%;
     font-weight: bold;
     letter-spacing: 1px;
@@ -90,59 +90,40 @@ body{
 
     }
 
-
   }
+  svg{
+       width: 80px;
+       height: 80px;
+       z-index: 1;
+       position: relative;      
+       .likarSvg, .stepSvg, .kormSvg, .uslugySvg{
+         fill: #95942b;
+         transition: all 1.5s ease-out; 
+        }
+      }
+     .likar, .step, .korm, .uslugi{
+      z-index: 99;
+      #krest{
+        fill: #95942b;
+      }
+        &:hover{
+      #krest{
+        fill: red;
+      }
+       .likarSvg, .stepSvg, .kormSvg, .uslugySvg{
+        fill:none;
+        stroke: #95942b;
+        stroke-width: 10;
+         stroke-dasharray:350%;
+      }
+    }
   .top_menu_right{
-    float: right;
-     a:nth-child(1){
-      &:before{
-        content:' ';
-        background-image: url('/img/icons/call.png');    
-      }
-      
-      &:hover:before{
-        content:'';
-        background-image: url('/img/icons/call_hover.png');      
-      }          
-    }
-        a:nth-child(2){
-      &:before{
-        content:' ';
-        background-image: url('/img/icons/find.png');  
-      }
-      
-      &:hover:before{
-        content:'';
-        background-image: url('/img/icons/find_hover.png');      
-      }          
-    }
+    float: right;  
   }
-    .top_menu_left{
-      float: left;
-
-    a:nth-child(1){
-      &:before{
-        content:' ';
-        background-image: url('/img/icons/poslugy.png');    
-      }
-      
-      &:hover:before{
-        content:'';
-        background-image: url('/img/icons/poslugy_hover.png');      
-      }          
-    }
-        a:nth-child(2){
-      &:before{
-        content:' ';
-        background-image: url('/img/icons/food.png');  
-      }
-      
-      &:hover:before{
-        content:'';
-        background-image: url('/img/icons/food_hover.png');      
-      }          
-    }
   }
+  .top_menu_left{
+    float: left;
+      } 
 }
 
 footer{
@@ -276,6 +257,7 @@ footer{
 .wrapper{
   border-right: 1.5px inset #95942b;
   min-height: 650px;
+  padding-top: 60px;
 }
 .sidebar{
   img{
@@ -288,6 +270,8 @@ footer{
   }
   height: 150px;
   margin-bottom: 20px;
+  width:60%;
+  margin:0 auto;
   a{
   height: 150px; 
   img{
@@ -302,7 +286,6 @@ footer{
   .cal_a_doctor_img{
     float: right;
     width: 30%;
-    height: 350px;
     overflow: hidden;
     border: 2px solid #95942b;
     border-radius:16px;      

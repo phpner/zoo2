@@ -1,8 +1,5 @@
 @extends('layouts.app')
 @section('content')
-    <div class="logo_call">
-    <img src="/img/logo_call.png" alt="">
-    </div>
     <div class="call_a_doctor clearfix">
     <div class="cal_a_doctor_img">
         <a class="img_popup" href="/img/call-a-doctor.jpg">

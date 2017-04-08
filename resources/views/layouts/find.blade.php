@@ -1,11 +1,6 @@
 @extends('layouts.app')
 @section('content')
   <div class="find">
-
-          <div class="col-md-12 text-center  logo_find">
-          <img  src="/img/logo_find.png" alt=""><br>
-          </div>
-
       <p><b>Ми працюємо</b> <em>c 8:00 до 20:00</em></p>
           <p><strong>Полтавська область, с. Засулля, вулиця Польова, б ??? </strong></p>
 
